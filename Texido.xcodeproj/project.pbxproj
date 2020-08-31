@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		55001F3524FD60B200D09476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55001F3424FD60B200D09476 /* AppDelegate.swift */; };
 		55001F3724FD60B200D09476 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55001F3624FD60B200D09476 /* SceneDelegate.swift */; };
-		55001F3924FD60B200D09476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55001F3824FD60B200D09476 /* ViewController.swift */; };
 		55001F3C24FD60B200D09476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55001F3A24FD60B200D09476 /* Main.storyboard */; };
 		55001F3E24FD60B300D09476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55001F3D24FD60B300D09476 /* Assets.xcassets */; };
 		55001F4124FD60B300D09476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55001F3F24FD60B300D09476 /* LaunchScreen.storyboard */; };
+		557B9AD624FD7A56001ACCE8 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 557B9AD524FD7A56001ACCE8 /* IQKeyboardManagerSwift */; };
+		557B9AD824FD825F001ACCE8 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B9AD724FD825F001ACCE8 /* HapticFeedback.swift */; };
+		55C0D13824FD61500057C158 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D13724FD61500057C158 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55001F3124FD60B200D09476 /* Texido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texido.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55001F3424FD60B200D09476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55001F3624FD60B200D09476 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55001F3824FD60B200D09476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55001F3B24FD60B200D09476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55001F3D24FD60B300D09476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55001F4024FD60B300D09476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55001F4224FD60B300D09476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557B9AD724FD825F001ACCE8 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		55C0D13724FD61500057C158 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557B9AD624FD7A56001ACCE8 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +62,54 @@
 			children = (
 				55001F3424FD60B200D09476 /* AppDelegate.swift */,
 				55001F3624FD60B200D09476 /* SceneDelegate.swift */,
-				55001F3824FD60B200D09476 /* ViewController.swift */,
-				55001F3A24FD60B200D09476 /* Main.storyboard */,
-				55001F3D24FD60B300D09476 /* Assets.xcassets */,
-				55001F3F24FD60B300D09476 /* LaunchScreen.storyboard */,
+				55001F4D24FD60EA00D09476 /* SupportingFiles */,
+				55001F4C24FD60DA00D09476 /* Utilities */,
+				55001F4B24FD60D300D09476 /* Controller */,
+				55001F4A24FD60CD00D09476 /* Model */,
+				55001F4924FD60C500D09476 /* View */,
 				55001F4224FD60B300D09476 /* Info.plist */,
 			);
 			path = Texido;
+			sourceTree = "<group>";
+		};
+		55001F4924FD60C500D09476 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55001F3A24FD60B200D09476 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55001F4A24FD60CD00D09476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55001F4B24FD60D300D09476 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55C0D13724FD61500057C158 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55001F4C24FD60DA00D09476 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				557B9AD724FD825F001ACCE8 /* HapticFeedback.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		55001F4D24FD60EA00D09476 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				55001F3D24FD60B300D09476 /* Assets.xcassets */,
+				55001F3F24FD60B300D09476 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = Texido;
+			packageProductDependencies = (
+				557B9AD524FD7A56001ACCE8 /* IQKeyboardManagerSwift */,
+			);
 			productName = Texido;
 			productReference = 55001F3124FD60B200D09476 /* Texido.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 55001F2824FD60B200D09476;
+			packageReferences = (
+				557B9AD424FD7A56001ACCE8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 55001F3224FD60B200D09476 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55001F3924FD60B200D09476 /* ViewController.swift in Sources */,
 				55001F3524FD60B200D09476 /* AppDelegate.swift in Sources */,
+				557B9AD824FD825F001ACCE8 /* HapticFeedback.swift in Sources */,
 				55001F3724FD60B200D09476 /* SceneDelegate.swift in Sources */,
+				55C0D13824FD61500057C158 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokulnair.Texido;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Texido;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokulnair.Texido;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Texido;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		557B9AD424FD7A56001ACCE8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		557B9AD524FD7A56001ACCE8 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 557B9AD424FD7A56001ACCE8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55001F2924FD60B200D09476 /* Project object */;
 }
