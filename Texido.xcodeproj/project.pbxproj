@@ -12,6 +12,7 @@
 		55001F3C24FD60B200D09476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55001F3A24FD60B200D09476 /* Main.storyboard */; };
 		55001F3E24FD60B300D09476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55001F3D24FD60B300D09476 /* Assets.xcassets */; };
 		55001F4124FD60B300D09476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55001F3F24FD60B300D09476 /* LaunchScreen.storyboard */; };
+		5518251924FE062200B5609C /* ShortcutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518251824FE062200B5609C /* ShortcutsViewController.swift */; };
 		557B9AD624FD7A56001ACCE8 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 557B9AD524FD7A56001ACCE8 /* IQKeyboardManagerSwift */; };
 		557B9AD824FD825F001ACCE8 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B9AD724FD825F001ACCE8 /* HapticFeedback.swift */; };
 		55C0D13824FD61500057C158 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D13724FD61500057C158 /* MainViewController.swift */; };
@@ -27,6 +28,7 @@
 		55001F3D24FD60B300D09476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55001F4024FD60B300D09476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55001F4224FD60B300D09476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5518251824FE062200B5609C /* ShortcutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShortcutsViewController.swift; path = Texido/View/ShortcutsViewController.swift; sourceTree = SOURCE_ROOT; };
 		557B9AD724FD825F001ACCE8 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		55C0D13724FD61500057C158 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		55F8FAEE24FDF39B00AED265 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		55001F4B24FD60D300D09476 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5518251824FE062200B5609C /* ShortcutsViewController.swift */,
 				55C0D13724FD61500057C158 /* MainViewController.swift */,
 			);
 			path = Controller;
@@ -200,6 +203,7 @@
 				557B9AD824FD825F001ACCE8 /* HapticFeedback.swift in Sources */,
 				55001F3724FD60B200D09476 /* SceneDelegate.swift in Sources */,
 				55C0D13824FD61500057C158 /* MainViewController.swift in Sources */,
+				5518251924FE062200B5609C /* ShortcutsViewController.swift in Sources */,
 				55F8FAEF24FDF39B00AED265 /* Swift+Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

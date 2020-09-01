@@ -29,8 +29,25 @@ class MainViewController: UIViewController {
         texidoImage.layer.borderWidth = 1
         texidoImage.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
+        replyTextField.attributedPlaceholder = NSAttributedString(string: "Type Here!",attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        rightSwipe.direction = .left
+        view.addGestureRecognizer(rightSwipe)
+        
     }
-   
+    
+    @objc func handleSwipe(sender: UISwipeGestureRecognizer){
+        self.performSegue(withIdentifier: "next", sender: nil)
+        
+    }
+    
+    @IBAction func shortCutVCBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "next", sender: nil)
+        haptic.haptiFeedback1()
+    }
+    
+    
 }
 
 //MARK:- TableView methods
@@ -43,7 +60,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = Messages[indexPath.row]
-       // cell.backgroundColor = chatBubble[indexPath.row]
+        // cell.backgroundColor = chatBubble[indexPath.row]
         cell.layer.cornerRadius = 20
         cell.textLabel?.textColor = #colorLiteral(red: 0.2710847557, green: 0.7155861855, blue: 0.9432037473, alpha: 1)
         cell.detailTextLabel?.textColor = #colorLiteral(red: 1, green: 0.5137743354, blue: 0.5282720923, alpha: 1)
@@ -70,16 +87,16 @@ extension MainViewController: UITextFieldDelegate{
     
     @IBAction func texidoBtn(_ sender: Any) {
         if replyTextField.text != ""{
-                   self.Messages.append(replyTextField.text!)
-                   self.identity.append("Me")
-                   tableView.reloadData()
-                   haptic.haptiFeedback1()
-                   replyByTexido()
-               }else{
-                   print("empty text field")
-               }
-       }
-       
+            self.Messages.append(replyTextField.text!)
+            self.identity.append("Me")
+            tableView.reloadData()
+            haptic.haptiFeedback1()
+            replyByTexido()
+        }else{
+            print("empty text field")
+        }
+    }
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         
         if textField.text != "" {
@@ -153,7 +170,11 @@ extension MainViewController{
             Messages.append("Hi, My Name is Texido :)")
             utilities()
             break
-        case "texido":
+        case "hi texido":
+            Messages.append("Yes, Please..Its my name..can I help you..Just text me and i will get it done")
+            utilities()
+            break
+        case " texido":
             Messages.append("Yes, Please..Its my name..can I help you..Just text me and i will get it done")
             utilities()
             break
