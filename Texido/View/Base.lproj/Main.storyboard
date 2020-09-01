@@ -15,8 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="asF-HS-o6G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bql-y1-vDl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="785"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="718"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,23 +55,31 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="J5B-FK-d3x"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8a-Sw-05c">
-                                <rect key="frame" x="20" y="837" width="326" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8a-Sw-05c">
+                                <rect key="frame" x="20" y="837" width="298" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLh-2w-Sox">
-                                <rect key="frame" x="354" y="827" width="52" height="54"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4l-UF-iO2">
+                                <rect key="frame" x="326" y="821" width="68" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.13127954789999999" green="0.79259200510000005" blue="0.4395961156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" image="command" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="39" weight="medium"/>
-                                </state>
                                 <connections>
-                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EcN-29-UVN"/>
+                                    <outletCollection property="gestureRecognizers" destination="dMz-eW-8Uu" appends="YES" id="E3v-Lj-5iV"/>
                                 </connections>
-                            </button>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W74-Js-gxg">
+                                <rect key="frame" x="20" y="870" width="298" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Texido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXr-up-2rc">
+                                <rect key="frame" x="18" y="40" width="192" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,12 +88,19 @@
                     <connections>
                         <outlet property="replyTextField" destination="q8a-Sw-05c" id="zDm-6w-O8u"/>
                         <outlet property="tableView" destination="bql-y1-vDl" id="y8v-uC-hVA"/>
+                        <outlet property="texidoImage" destination="z4l-UF-iO2" id="ai7-DT-dnP"/>
                         <outlet property="userText" destination="q8a-Sw-05c" id="5qG-Xi-gZy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dMz-eW-8Uu">
+                    <connections>
+                        <action selector="texidoBtn:" destination="BYZ-38-t0r" id="cJf-9R-M8d"/>
+                        <outlet property="delegate" destination="z4l-UF-iO2" id="qTR-q1-CNQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-6472.4637681159429" y="51.5625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OjV-XO-Hpx">
@@ -98,10 +117,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wna-mw-Gm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-7178" y="58"/>
         </scene>
     </scenes>
     <resources>
-        <image name="command" catalog="system" width="128" height="115"/>
+        <image name="bg" width="168" height="300"/>
     </resources>
 </document>
