@@ -74,8 +74,8 @@ extension ShortcutsViewController{
         
         if phoneNoTextField.text?.count == 10 {
             
-            let number = phoneNoTextField.text
-            if let phoneUrl = URL(string: "tel:\(String(describing: number))"){
+            let number = Int(phoneNoTextField.text!)
+            if let phoneUrl = URL(string: "tel:\(number)"){
                 if UIApplication.shared.canOpenURL(phoneUrl){
                     UIApplication.shared.open(phoneUrl, options: [:], completionHandler: nil)
                     haptic.haptiFeedback1()
@@ -134,12 +134,19 @@ extension ShortcutsViewController{
     }
     
     func sendMessage(){
+        
+        if mesgNumber.text?.count == 10 {
+        
         if(MFMessageComposeViewController.canSendText()) {
                    let controller = MFMessageComposeViewController()
             controller.body = messageContent.text!
             controller.recipients = [mesgNumber.text!]
             controller.messageComposeDelegate = self
-               }
+        }else{
+            print("number format is wrong")
+            }
+            
+        }
     }
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
        switch result {

@@ -93,6 +93,10 @@ extension MainViewController: UITextFieldDelegate{
             haptic.haptiFeedback1()
             replyByTexido()
         }else{
+            self.Messages.append("Text Please!")
+            self.identity.append("Texido")
+            tableView.reloadData()
+            haptic.haptiFeedback1()
             print("empty text field")
         }
     }
