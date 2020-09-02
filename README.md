@@ -39,7 +39,7 @@ various shortcuts too.
 * ImageIO
 * Foundation
 
-#Pods 
+# Pods 
 
 In this projec i inherited two pod files which you can copy and paste as given,The real pod files were really big and it consista of codes which we dont need. So 
 there are two files "Swift+Gif.swift" & a package dependancy which helps to popup/dismiss the keyboard (not must, you can make changes). 
