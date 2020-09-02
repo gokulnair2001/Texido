@@ -1,5 +1,4 @@
 # Texido
-Texido is an text assistant, which gives various sort of replies with what you enter. Texido is basically a clone of  Natasha in Hike :).
  
 ![Badge](https://img.shields.io/badge/Xcode-11.6-green)
 ![badge](https://img.shields.io/badge/Swift-5.0-red)
