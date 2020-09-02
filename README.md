@@ -12,10 +12,8 @@
 
 # Inspiration ❤️
 
-This is an assistant app which have inbuit commands and reply, so the idea came to me when i used the Arogya Setu App official app by Indian🇮🇳 government 
-which have inbuilt commands and reply to diagnose COVID19, so i thought why not i make an app which would give instant replies to what you ask. So you can make 
-changes as your need and make it more versatile I know its not an upto the mark project but sometimes while you need only a pinch of command and reply to work on you can
-use this, like the one we see in tavel booking apps.
+This is an assistant app which have inbuit commands and reply, so the idea came to me when i used the Arogya Setu, official app by Indian🇮🇳 government 
+which have inbuilt commands/reply to diagnose COVID19, so i thought why not i make an app which would give instant replies to what you ask. So at last landed with Texido, you can make changes in code on what your need is and make it more versatile I know its not an upto the mark project but there are times when you need only a pinch of command and reply to work on, during those times you can use Texido.
 
 # Introduction ⚒  
 Working of this app is very simple write your command and just press the small gif image present over there and Texido will reply.It have various inbuilt commands
