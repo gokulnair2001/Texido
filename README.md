@@ -39,7 +39,7 @@ various shortcuts too.
 
 # Pods 
 
-In this projec I inherited two pod files which you can copy and paste the same as given ,The real pod files were really big and it consists of codes which we dont need, So I took those ones which are required ; one is "Swift+Gif.swift" file  which I took from the Podfiles and a package dependancy which helps to popup/dismiss the keyboard (not must, you can make changes).
+In this projec i inherited two pod files which you can copy and paste the same as given ,The real pod files were really big and it consists of codes which we dont need, So I took those ones which are required ; one is "Swift+Gif.swift" file  which I took from the Podfiles and a package dependancy which helps to popup/dismiss the keyboard (not must, you can make changes).
 
 # Snapshots of App 📸
 
